@@ -1,5 +1,4 @@
 /* Add js reporter for sauce */
-
 jasmine.getEnv().addReporter(new jasmine.JSReporter2());
 jasmine.getEnv().defaultTimeoutInterval = 3000;
 
@@ -148,7 +147,7 @@ testSheet = function (sheet) {
     });
 };
 
-//TODO: do it cleaner - the same way as in css
+// TODO: do it cleaner - the same way as in css
 
 function extractId(href) {
     return href.replace(/^[a-z-]+:\/+?[^\/]+/i, '') // Remove protocol & domain
